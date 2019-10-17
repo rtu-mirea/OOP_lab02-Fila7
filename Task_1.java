@@ -14,7 +14,7 @@ public class Task_1
     {
         int res = 0;
         for (int i = 0; i<data.length; i++)
-            if(data[i].split(",")[1].substring(data[i].split(",")[1].indexOf(".")+1).equals("com")) res++;
+            if(data[i].split(",")[1].substring(data[i].split(",")[1].lastIndexOf(".")+1).equals("com")) res++;
         return res;
     }
     public String[] first_letter_snames(char letter)
