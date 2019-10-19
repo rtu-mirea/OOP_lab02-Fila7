@@ -1,12 +1,15 @@
+
 public class LR_2
 {
     public static void main(String[] args) {
-    String snames = "Владимиров З.Л.,jismumpgxy@ma.com\nКорнилов В.Л.,qaof@ma.kz\nЖданов Т.Г.,fxonspsi@ma.com\nСитников С.Д.,qrponfweno@ma.com\nСуворов И.П.,qupqxtg@ma.com\nПрохоров В.Д.,lehp@ma.kz\nГорбунов Р.Р.,uegk@ma.kz\nФёдоров П.В.,zddyismy@ma.com\nПанов М.В.,peothnlt@ma.kz\nЩербаков С.В.,eafq@ma.com\nЗимин А.Г.,gjsakkzx@ma.kz\nЖуравлёв М.Д.,rxpnvsfw@ma.com\nКиселёв А.Г.,wsoh@ma.kz\nФокин В.Л.,emgwc@ma.kz\nГригорьев Э.Л.,koavg@ma.kz\nМишин В.А.,jbrd@ma.com\nПанфилов К.Ф.,alwbhkz@ma.com\nТарасов Е.М.,ccoetjnmw@ma.kz\nКотов А.С.,cetosmng@ma.com\nЛарионов И.М.,esrkrruesm@ma.com";
-    Task_1 t = new Task_1(snames);
-    t.fix_names();
-    System.out.println(t.toString());
-    System.out.println(t.dot_com());
-    String[] as = t.first_letter_snames('В');
-    System.out.println(as.length);
+    String snames = "Окрокверцхов А.Ю.,ocmaeoq@mail.ru.\nЯнварев К.П.,jvyiutnz@mail\nМакушев Ф.Ф.,flwtuq@mail.ru.\nФотеев Ф.Л.,pismvlyb@gmail.com.\nКривонос П.С.,pcjjarxc@mail.ru.\nКурчатов С.И.,fladusna@gmail.com.\nБобр С.М.,edzx@mail.ru.\nЯчменев О.И.,lewkj@mail.ru.\nФурманов П.П.,dvvj@mail.ru.\nСотов Р.А.,larwo@mail.ru.\nСоломин А.Ч.,kgpcfznlyf@gmail.com.\nДругов М.Д.,mvsxxgb@gmail.com.\nБаскаков Н.В.,ipbiqgju@mail.ru.\nЛясковец Т.Е.,podgav@gmail.com.\nБелолипецкий П.М.,vznv@gmail.com.\n";
+    Task_2 t = new Task_2(snames);
+    System.out.println(t);
+    System.out.println("--------------------adding_new-----------------------");
+    t.add("Жданов Т.Г.,fxonspsi@gmail.com.");
+    System.out.println(t);
+    System.out.println("--------------------fixing_domains-----------------------");
+    t.fix_domain();
+    System.out.println(t);
     }
 }
